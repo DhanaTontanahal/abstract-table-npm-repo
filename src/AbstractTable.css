@@ -1,0 +1,91 @@
+.abstract-table-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.table-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    width: 200px;
+    padding: 5px;
+}
+
+.filter-button,
+.columns-button,
+.export-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.abstract-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.abstract-table th,
+.abstract-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.abstract-table th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.abstract-table th.ascending::after {
+    content: " ▲";
+}
+
+.abstract-table th.descending::after {
+    content: " ▼";
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pagination-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.pagination-button.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+.filter-group,
+.column-toggle-group {
+    margin-bottom: 10px;
+}
+
+.filter-input {
+    width: 100%;
+    padding: 5px;
+}
+
+.close-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.red-text {
+    color: red;
+}
